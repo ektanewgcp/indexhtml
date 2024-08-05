@@ -1,0 +1,185 @@
+<html>
+    <head><title>Form page</title>
+    </head>
+    <body>
+        <form action="form1.html" method="Post">
+            <label>Name:</label>
+            <input>
+            <label>Age:</label>
+            <input>
+            <label>Address:</label>
+            <input>
+           
+        </form>
+        <form action="form1.html" method="GET"> <!--to check if data is processed or not--gives ? when submitted--->
+            <fieldset>
+                <legend>Registration Form</legend>
+          
+            <label for="f_name">Name:
+                <input 
+                    name="f_name"
+                    type="text" 
+                    id="f_name"
+                    required
+                    placeholder="Name">
+            </label>
+            <label for="f_age">Age:
+                <input 
+                    name="f_age" 
+                    type="number" 
+                    placeholder="32">
+            </label>    
+            <label for ="f_address">Address:
+                <input 
+                    name="f_address" 
+                    type="text">
+            </label>
+            <button type="submit">Submit</button>
+<!---password-->
+            <label>Password:
+                <input 
+                    name="pass" 
+                    type="password" 
+                    placeholder="password">
+            </label>
+<!--url-->
+            <label>URL:
+                <input 
+                    name="url" 
+                    type="url" 
+                    placeholder="http://www.google.com">
+            </label>
+<!--number-->
+            <label>Quantity:
+                <input 
+                    name="no" 
+                    type="number" >
+            </label>
+<!--date-->
+            <label>date:
+                <input 
+                    name="date" 
+                    type="date" 
+                    value="23-01-2023">
+            </label>
+<!--read only date-->
+            <label>date:
+                <input 
+                    name="date" 
+                    type="date" 
+                    value="2023-05-23" 
+                    readonly><br>
+            </label>
+<!--disabled date-->
+            <label>date:
+                <input 
+                    name="date" 
+                    type="date"
+                    value="2023-05-23"
+                disabled>
+            </label>
+    <!--time-->
+            <label>Time:
+                <input 
+                    name="Time" 
+                    type="time">
+            </label>
+
+    <!---radio button-->
+            <div>
+                <p>Select Gender:</p>
+                <label>Male
+                    <input for e_gent
+                        name="e_gender"
+                        id="e_gent"
+                        type="radio">
+                </label>
+                 <label>Female
+                    <input for e_lady
+                        name="e_female"
+                        id="e_lady"
+                        type="radio">
+                </label>
+                <p>Enter food:</p>
+                <label>Veg
+                    <input for food
+                        name="meal"
+                        id="food"
+                        type="checkbox">
+                <label>NonVeg
+                    <input for nonfood
+                        name="non meal"
+                        id="nonfood"
+                        type="checkbox">
+                </label>
+                <label>Search:
+                    <input for find 
+                    id="find"
+                    type="search">
+                </label>
+                <input type="submit" value="search">
+                <!--upload function>-->
+                <label>Upload:
+                    <input for upload_file 
+                    id="upload_file"
+                    type="file"
+                    accept="image/*"
+                    multiple>           <!--uploading multiple files-->
+                </label>
+                <label>Color:
+                    <input for e_color 
+                    id="e_color"
+                    type="color">
+                </label>
+                <label for="text">Enter Text:
+                    <textarea
+                    name="text"
+                    id="text"
+                    rows="5"
+                    cols="5"></textarea>
+                    </label>
+                <label for ="e_country">Select the Country:
+                    <select
+                    id="e_country"
+                        name="e_country">
+                        <option value="IN">India</option>
+                        <option value="PAR">Paris</option>
+                        <option value="UK">United Kingdom</option>
+                        </select>
+                        </label>
+                <label for ="e_range">Select the Range:
+                    <input
+                            id="e_range"
+                            name="range"
+                            type="range"
+                            min="1"
+                            max="50">
+                </label>
+                <label for ="f_range">Select the Range:step wise
+                    <input
+                                id="f_range"
+                                name="range"
+                                type="range"
+                                min="5"
+                                max="20">
+                </label>
+                <!--Fancy button-->
+                <label for ="f_image">Click
+                    <input
+                        type="image"
+                        src="https://images.saatchiart.com/saatchi/2158365/art/10132767/9195537-MLPLFINM-7.jpg">
+                <!---Hidden-->
+                <label for="e_hidden">
+                    <input
+                        type="hidden"
+                        id="e_hidden">
+                </label>
+                <!--reset-->
+                <button type="reset">Reset</button>
+    
+            </div>
+            <button>Submit</button>
+        </fieldset>
+        </form>
+    </body>
+</html>
